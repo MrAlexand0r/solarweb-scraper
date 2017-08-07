@@ -1,6 +1,6 @@
 {
-  "name": "solarweb-scraper",
-  "version": "1.0.0",
+  "name": "solarweb",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,10 @@
     "solarweb",
     "fronus"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MrAlexand0r/solarweb-scraper"
+  },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "dotenv": "^4.0.0",
