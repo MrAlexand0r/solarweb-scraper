@@ -1,11 +1,14 @@
 {
   "name": "solarweb",
-  "version": "1.0.2",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.5",
+  "description": "Easy way of reading fronius energy values directly from solar.web in nodejs",
+  "main": "solarweb.js",
   "scripts": {
     "start": "node index.js"
   },
+  "files": [
+    "solarweb.js"
+  ],
   "author": "MrAlexand0r",
   "license": "ISC",
   "keywords": [
