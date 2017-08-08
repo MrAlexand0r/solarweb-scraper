@@ -7,7 +7,7 @@ Easy way of reading fronius energy values directly from solar.web in nodejs
 
 `npm install solarweb --save`
 
-```JavaScript
+```js
 var solarweb = require('solarweb');
                                         //bool
 solarweb.login('username', 'password', rememberme, function callback(success){
@@ -15,7 +15,7 @@ solarweb.login('username', 'password', rememberme, function callback(success){
 });
 ```
 ### Only works when logged in:
-```JavaScript
+```js
 var date = {
     year:2017,
     month:8,
