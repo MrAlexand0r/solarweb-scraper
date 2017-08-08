@@ -6,7 +6,7 @@ var fs = require('fs');
 var isLoggedIn = false;
 
 module.exports = {
-    login: (name, pw, callback) => {
+    login: (name, pw, rememberme, callback) => {
         if (!name || !pw) { callback(false); return; }
         request.get('https://www.solarweb.com/', (err, res, body) => {
             if(err) { callback(false); return; }
@@ -19,7 +19,7 @@ module.exports = {
                     UserName: name,
                     Password: pw,
                     ReturnUrl: "",
-                    RememberMe: false,
+                    RememberMe: rememberme,
                     'X-Requested-With': 'XMLHttpRequest'
                 }
             };

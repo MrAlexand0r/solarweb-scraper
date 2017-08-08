@@ -4,7 +4,7 @@ var solarweb = require('./solarweb.js');
 
 require('dotenv').config();
 
-solarweb.login(process.env.SW_USERNAME, process.env.SW_PASSWORD, (success)=>{
+solarweb.login(process.env.SW_USERNAME, process.env.SW_PASSWORD, true, (success)=>{
     if(success){
         var today = new Date();
         console.log(today);
@@ -30,6 +30,6 @@ function generateCsvs(data){
         element.data.forEach(line=>{
             csvLines.push(line.join(','));
         });
-        fs.writeFile(element.name, csvLines.join('\n'));
+        fs.writeFile(element.name+'.csv', csvLines.join('\n'));
     }, this);
 }
