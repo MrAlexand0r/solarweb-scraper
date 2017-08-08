@@ -1,6 +1,6 @@
 {
   "name": "solarweb",
-  "version": "1.0.5",
+  "version": "1.1.1",
   "description": "Easy way of reading fronius energy values directly from solar.web in nodejs",
   "main": "solarweb.js",
   "scripts": {
