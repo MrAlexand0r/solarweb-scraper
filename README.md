@@ -1,4 +1,4 @@
-# solar.web webscraper
+# solar.web webscraper [![Build Status](https://travis-ci.org/MrAlexand0r/solarweb-scraper.svg?branch=master)](https://travis-ci.org/MrAlexand0r/solarweb-scraper) [![dependencies status](https://david-dm.org/mralexand0r/solarweb-scraper.svg)](https://david-dm.org/mralexand0r/solarweb-scraper)
 
 Easy way of reading fronius energy values directly from solar.web in nodejs
 
