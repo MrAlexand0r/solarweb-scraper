@@ -11,8 +11,8 @@ module.exports = {
         request.get('https://www.solarweb.com/', (err, res, body) => {
             if(err) { callback(false); return; }
             var $ = cheerio.load(body);
-            var token = $('#user-login-form > input[type="hidden"]:nth-child(1)').val();
-            console.log($('#user-login-form > input[type="hidden"]:nth-child(1)').val()); // login form token
+            var token = $('input[type="hidden"]:nth-child(1)').val();
+            console.log($('input[type="hidden"]:nth-child(1)').val()); // login form token
             var postData = {
                 form: {
                     __RequestVerificationToken: token,
